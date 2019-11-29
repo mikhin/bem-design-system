@@ -1,0 +1,33 @@
+.grid
+	display grid
+	box-sizing border-box
+
+	&_m-columns
+		&_10
+			grid-template-columns 1fr
+
+			@media (min-width 1024px)
+				grid-template-columns repeat(10, 1fr)
+
+		&_12
+			grid-template-columns 1fr
+
+			@media (min-width 1024px)
+				grid-template-columns repeat(12, 1fr)
+
+	&_col-gap
+		&_two-thirds
+			column-gap calc(var(--gap) * (2 / 3))
+
+		&_half
+			column-gap calc(var(--gap) / 2)
+
+		&_full
+			column-gap var(--gap)
+
+	&_row-gap
+		&_half
+			row-gap calc(var(--gap) / 2)
+
+		&_full
+			row-gap var(--gap)
