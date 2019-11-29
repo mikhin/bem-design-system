@@ -1,0 +1,18 @@
+.warning__content
+	display flex
+	align-items center
+	flex-direction row
+	justify-content center
+	padding-left var(--space_m)
+	padding-right var(--space_m)
+	padding-top 57px
+
+	@media (min-width $desktopWidth)
+		padding-left var(--space_xxxl)
+		padding-right var(--space_xxxl)
+		padding-top 57px
+		padding-bottom 34px
+
+	// БЭМ-ошибка, в разметке на блок placeholder нужно докинуть микс (элемент от блока warning), чтобы стилизовать отступ
+	.placeholder
+		margin-bottom 18px
