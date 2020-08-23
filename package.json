@@ -33,7 +33,11 @@
     "patch": "gulp patch",
     "minor": "gulp minor",
     "major": "gulp major",
-    "prepush": "npm run lint"
+    "prepush": "npm run lint",
+    "preinstall": "npx npm-force-resolutions"
+  },
+  "resolutions": {
+    "graceful-fs": "4.2.4"
   },
   "repository": {
     "type": "git",
